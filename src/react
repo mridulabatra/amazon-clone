@@ -1,0 +1,70 @@
+//create react app
+
+
+// npx create-react-app my-app
+// cd my-app
+// npm start
+
+
+
+
+//component part of ui   .... app component root component (contains all component) ...are reuseable 
+//will be written in js  ...2 types => 
+//1. stateless functional component(js function return html that describes ui)
+//2. stateful class component (regular es6 classes that extend the component class from react lib.
+//contains render method that return html)
+
+
+
+
+
+//properties(props)[i/p]---->js function ---->html(jsx)
+// import React from "react";
+// //create function
+// function Hello(){
+//     return <h1>Hello !!!</h1>
+// }
+// //export function to connect to rest and we are exporting it as default so it can be imported by any name
+// export default Hello
+//on exporting it like this: export const Hello() => return <h1>Hello !!!</h1> it has to use the same name
+
+
+//in app.js
+//import Hello from './...'
+{/* <div>
+    // to use componentwrite it as custom html tag
+    <Hello></Hello>
+</div> */}
+
+
+
+
+
+
+import { appendFile } from "fs";
+//props--->ES6 classes--->HTML(JSX)
+// additional to this it can contain private int. state (it takes some info private to that component
+// n use it describe user interface)
+
+//import React,{Component} from 'react';
+// to be react class component it should
+//1. extends component 
+//2. impliment render method which will return null / some HTML
+// class Hello extends Component{
+//  render(){
+//     return <h1>Class compo</h1>
+//  }
+// }
+// export default Hello
+
+//import in app.js use as custom html tag <Hello />
+
+
+
+
+
+//JSX--> it is a syntax extension to JavaScript
+// jsx tags have tag name attribute and children, it makes react code simpler n elegant
+//class--->className , for -->htmlFor, onclick-->onClick, tabindex--->tabIndex , 
+//without jsx
+//return React.createElement('div',{id:'hello'},React.createElement('h1',null,'Hello!!!'));
